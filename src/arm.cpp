@@ -36,7 +36,7 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
 
-    GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Todo", 0, NULL);
+    GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "armsim", 0, NULL);
 
     if (!window)
     {
@@ -84,8 +84,8 @@ int main()
         // Imgui
         if(show)
         {
-            ImGui::Begin("Things todo", &show);
-            ImGui::Text("These are the things you should do right now");
+            ImGui::Begin("ARM chip", &show);
+            ImGui::Text("This is how arm chip works");
 
 
             if(completed)
@@ -99,7 +99,7 @@ int main()
                 ImGui::Text(todoText);
             }
 
-            ImGui::InputText("Enter a todo", todoText, sizeof(todoText));
+            ImGui::InputText("Enter a something", todoText, sizeof(todoText));
 
             ImGui::Checkbox("Done", &completed);
 

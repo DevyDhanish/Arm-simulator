@@ -1,5 +1,3 @@
-<p align="center">
-<h1> Arm cortex M0 sim </h1>
-</p>
+<h1 align="center"> Arm cortex M0 sim </h1>
 
 This is for learning purpose
